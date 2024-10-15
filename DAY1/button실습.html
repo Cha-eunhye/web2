@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button실습</title>
+    <style>
+        body {
+            background: rgb(7, 5, 30);
+        }
+
+    
+        ul {
+            display: flex;
+            margin: 50px 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            padding: 16px 100px;
+            border: 1px solid transparent;
+            margin-right: 16px;
+            position: relative;
+            transition: 0.4s;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0%;
+            height: 1px;
+            background-color: rgb(38, 38, 88);
+            transition: 0.4s;
+        }
+
+        .btn:hover::before {
+            width: 100%;
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0%;
+            height: 1px;
+            background-color: rgb(38, 38, 88);
+            transition: 0.4s;
+        }
+
+        .btn:hover::after {
+            width: 100%;
+        }
+
+        .btn:hover {
+            border-left: 1px solid rgb(38, 38, 88);
+            border-right: 1px solid rgb(38, 38, 88);
+        }
+
+
+    </style>
+</head>
+<body>
+     <ul>
+        <li>
+                <a href="#" class="btn">About</a>
+        </li>
+        <li>
+                <a href="#" class="btn">Conteat</a>
+        </li>
+        <li>
+                <a href="#" class="btn">Mail</a>
+        </li>
+    </ul>
+
+</body>
+</html>

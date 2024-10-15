@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자코모</title>
+  
+    <style>
+        section {
+            width: 100%;
+            display: flex;
+        }
+
+        .content {
+            position: relative;
+            width: 40%;
+            height: 500px;
+            color: #fff;
+            margin: 10px;
+            padding: 16px;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content:nth-child(1) {
+            background: url(./프리미엄가죽.jpg);
+        }
+
+        .content:nth-child(2) {
+            background: url(./기능성\ 패브릭.jpg);
+        }
+
+        .content:nth-child(3) {
+            background: url(./올바른\ 내장재.jpg);
+        }
+        
+        p {
+            font-size: 35px;
+        }
+
+        h2 {
+            font-size: 10px;
+        }
+
+        .text {
+            /* display: flex; */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="content">
+            <div class="text">
+                <p>Leather</p>
+                <h2>프리미엄 가죽</h2>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="text">
+                <p>Fabric</p>
+                <h2>기능성 패브릭</h2>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="text">
+                <p>Material</p>
+                <h2>올바른 내장재</h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
