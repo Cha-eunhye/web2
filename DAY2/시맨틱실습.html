@@ -10,6 +10,7 @@
             margin: 0;
         }
 
+        
         h1 {
             background-color: pink;
             height: 60px;
@@ -35,58 +36,112 @@
         .relative {
             border: 1px solid#000;
             margin: 10px;
-            
+        }
+
+        .box {
+            border: 1px solid#000;
+            display: flex;
+        }
+        .menu {
+            display: flex;
+        }
+        .menu > div > button {
+            padding: 10px;
+            background-color: rgb(242, 117, 159);
+            border: none;
+            border-radius: 10px;
+            margin: 7px;
+        }
+        .menu > div > button > a {
+            color: #fff;
+            text-decoration: none;
         }
 
     </style>
 </head>
 <body>
     <header>
-        <h1>logo</h1>
-        <nav>
-            <ul class="relative">
+        <section>
+           <h1 class="logo">logo</h1>
+            <div class="menu">
+            <div>
+                <button>
+                    <a href="#">메뉴</a>
+                </button>
+            </div>
+            <div>
+                <button>
+                    <a href="#">메뉴</a>
+                </button>
+            </div>
+            <div>
+                <button>
+                    <a href="#">메뉴</a>
+                </button>
+            </div>
+        </div>
+           
+        </section>
+        <section>
+            <div class="relative">
                 <h2>옆집에 고양이가 침입했다!</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Tempora consequuntur vel deserunt autem eos. Nisi odio quibusdam asperiores nesciunt provident natus minima aliquid, 
                     quaerat corrupti, ipsa facere, harum consequuntur fugiat.</p>
-            </ul>
+            </div>
 
-            <ul class="relative">
+            <div class="relative">
                 <h2>바다에서 쉬고있는 점박이물범!</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Officia tempora maxime distinctio labore nam blanditiis laborum aspernatur quam ratione aliquid suscipit delectus consequatur, 
                     vero consequuntur natus recusandae ea quis rerum.</p>
-            </ul>
+            </div>
 
-            <ul class="relative">
+            <div class="relative">
                 <h2>건강을 지키는 생활습관 10가지</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Similique, consequatur facilis perspiciatis, libero officiis, 
                     minus inventore voluptas nulla quod voluptatum soluta non perferendis maxime expedita vero a quia labore ex!</p>
-            </ul>
+            </div>
 
-            <ul class="relative">
+            <div class="relative">
                 <h2>아이돌커플탄생?!</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Nesciunt libero, culpa reprehenderit voluptates explicabo sint fugit soluta nihil pariatur voluptatum! 
                     Itaque eveniet odit ipsam dolor cumque enim vero nemo. Deserunt?</p>
-            </ul>
+            </div>
 
-            <ul class="relative">
+            <div class="relative">
                 <h2>종합영양제 과연 효과있을까?</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                     Error accusamus voluptate, quae totam dolore optio reiciendis eos. 
                     Minima fugiat eos perferendis. Assumenda sint, aperiam ad fuga rerum eum at eaque.</p>
-            </ul>
+            </div>
 
-            <ul class="relative"> 
+            <div class="relative"> 
                 <h2>수요일 직장인 피로도 99%라는 연구결과...</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Vel nisi, sapiente dolores eius est aperiam. 
                     Nesciunt omnis veritatis repudiandae delectus, 
                     officiis voluptas laboriosam sunt maxime voluptatem, at maiores perferendis nostrum.</p>
-            </ul>
-        </nav>
+            </div>
+
+        </section>
+
+        <aside>
+            <h2>Right aside</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Corporis quas doloribus perferendis explicabo perspiciatis expedita at saepe qui quae voluptates nostrum atque delectus 
+                incidunt deleniti animi similique minus, laborum cupiditate!</p>
+
+            <div>
+                <input type="text" name="username"placeholder="이름입력">
+                <input type="submit">
+                <h3>광고</h3>
+                <p>광고내용</p>
+            </div>
+            
+        </aside>
     </header>
 
 </body>
