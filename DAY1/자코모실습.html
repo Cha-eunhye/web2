@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자코모실습</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        section {
+            display: flex;
+            width: 100%;
+        }
+
+        figure {
+            position: relative;
+            height: 800px;
+            overflow: hidden;
+            /* 이미지가 삐져나올때 */
+        }
+
+        figure > img {
+            transition: 0.7s;
+        }
+
+        figure > img:hover {
+            transform: scale(1.1);
+            /* 이미지가 커지는 크기 */
+        }
+
+        .text_box {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            color: #fff;
+        }
+
+        h2 {
+            margin: 16px 0;
+            font-size: 48px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <figure>
+            <img src="./프리미엄가죽.jpg" alt="">
+            <div class="text_box"></div>
+            <h2>Leather</h2>
+            <p>프리미엄가죽</p>
+        </figure>
+
+        <figure>
+            <img src="./기능성 패브릭.jpg" alt="">
+            <div class="text_box"></div>
+            <h2>Fabric</h2>
+            <p>기능성패브릭</p>
+        </figure>
+
+        <figure>
+            <img src="./올바른 내장재.jpg" alt="">
+            <div class="text_box"></div>
+            <h2>Material</h2>
+            <p>올바른내장제</p>
+        </figure>
+    </section>
+</body>
+</html>
