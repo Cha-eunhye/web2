@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>플러스에서 엑스로</title>
+    <title>플러스에서 엑스로 정답</title>
+    <script src="https://kit.fontawesome.com/a2129ba9b8.js" crossorigin="anonymous"></script>
+
     <style>
         * {
             padding: 0;
@@ -11,41 +13,54 @@
         }
 
         header {
-            background-color: rgb(167, 165, 165);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px;
+            background-color: rgb(245, 148, 29);
+            color: #FFF;
+        }
+
+        ul {
             display: flex;
         }
 
-        .logo {
-            color: #fff;
-            font-size: 24px;
+        li {
+            list-style: none;
+            margin: 0 16px;
         }
 
-        div > ul > li {
-            color: #fff;
-            display: flex;
-            margin: 10px;
+        .plus_btn:hover > i {
+            animation-name: trans_close;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
         }
 
-        div > p {
-            color: #fff;
-            font-size: 50px;
+
+
+        @keyframes trans_close {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(-225deg);
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">LOGO</div>
-            <div>
-                <ul>
-                    <li>메뉴1</li>
-                    <li>메뉴2</li>
-                    <li>메뉴3</li>
-                    <li>메뉴4</li>
-                </ul>
-            </div>
-            <div>
-                <p>+</p>
-            </div>
+        <h1 class="logo">LOGO</h1>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+        </ul>
+        <div class="plus_btn">
+            <i class="fa-solid fa-plus fa_2x1"></i>
+        </div>
     </header>
 </body>
 </html>

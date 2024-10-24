@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ball</title>
+    <style>
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            margin: 50px;
+
+        }
+        .ball1 {
+            width: 80px;
+            height: 80px;
+            background-color: rgb(201, 149, 249);
+            border-radius: 50px;
+            animation: ball_jump 2s linear infinite;
+
+        }
+
+        .ball2 {
+            width: 80px;
+            height: 80px;
+            background-color: rgb(201, 149, 249);
+            border-radius: 50px;
+            animation: ball_jump 2s linear infinite;
+            animation-delay: 0.3s;
+        }
+
+        .ball3 {
+            width: 80px;
+            height: 80px;
+            background-color: rgb(201, 149, 249);
+            border-radius: 50px;
+            animation: ball_jump 2s linear infinite;
+            animation-delay: 0.5s;
+        }
+
+    
+
+        @keyframes ball_jump {
+            0% {
+                transform:translate(90deg); 
+            }
+            50% {
+                transform:translate(0,200px);
+            }
+            100% {
+                transform: translate( );
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animaition_box">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+    </div>
+</body>
+</html>
