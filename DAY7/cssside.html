@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssside</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            text-align: center;
+            margin: 50px auto;
+            display: block;
+            padding: 16px 24px;
+            font-size: 24px;
+            background-color: blueviolet;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            /* 커서를 올리면 바뀜 */
+        }
+
+        ul {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            /* 1200넘어가는것들은 안보이게 */
+        }
+
+        button:focus + ul li {
+            animation: slide 5s forwards;
+        }
+
+        li {
+            list-style: none;
+            min-width: 268px;
+            height: 150px;
+            margin: 0 16px;
+            animation-timing-function: linear;
+        }
+
+        li:nth-child(1) {
+            background: url(./고양이1.jpeg);
+            background-size: cover;
+        }
+        li:nth-child(2) {
+            background: url(./고양이2.jpeg);
+            background-size: cover;
+        }
+        li:nth-child(3) {
+            background: url(./고양이3.jpeg);
+            background-size: cover;
+        }
+        li:nth-child(4) {
+            background: url(./고양이4.jpeg);
+            background-size: cover;
+        }
+        li:nth-child(5) {
+            background: url(./고양이5.jpeg);
+            background-size: cover;
+        }
+        li:nth-child(6) {
+            background: url(./고양이6.jpeg);
+            background-size: cover;
+        }
+        li:nth-child(7) {
+            background: url(./고양이7.jpeg);
+            background-size: cover;
+        }
+        li:nth-child(8) {
+            background: url(./고양이8.jpeg);
+            background-size: cover;
+        }
+
+        @keyframes slide {
+            20% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-1200px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <button>고양이가 지나가요</button>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+</html>
