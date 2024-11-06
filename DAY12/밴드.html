@@ -15,18 +15,27 @@
             margin: 10px;
         }
 
-        .band_logo {
-            font-size: 14px;
-            border: 2px solid#000;
-            border-radius: 20px;
-            padding: 0 5px;
+        div > ul {
+            list-style: none;
+            display: flex;
         }
 
-        .login_text > button {
+        h1 {
+            font-size: 24px;
+            border: 2px solid#000;
+            border-radius: 20px;
+            padding: 0 30px;
+        }
+
+        .login_btn {
             background-color: rgb(3, 241, 3);
             color: #fff;
             border: none;
             padding:10px;
+        }
+
+        .band_logo {
+            display: flex;
         }
 
         
@@ -35,12 +44,25 @@
 <body>
     <header>
         <div class="band_logo">
-            <h2>BAND</h2>
-        </div>
-        <div class="login_text">
-            <a href="#">한국어</a>
-            <a href="#">회원가입</a>
-            <button>로그인</button>
+            <h1>BAND</h1>
+        <ul>
+            <li>
+                <select name="lang">
+                    <option value="eng">English</option>
+                    <option value="ko">한국어</option>
+                    <option value="jpn">日本語</option>
+                    <option value="esp">espanol</option>
+                    <option value="cha">繁體中文</option>
+                    <option value="bhs">Bahasa Indonesia</option>
+                </select>
+            </li>
+            <li>
+                <a href="#">회원가입</a>
+            </li>
+            <li>
+                <button class="login_btn">로그인</button>
+            </li>
+        </ul>
         </div>
     </header>
 </body>
