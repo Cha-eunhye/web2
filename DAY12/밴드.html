@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,48 +9,103 @@
         * {
             padding: 0;
             margin: 0;
+            background-color: #fcf8f8;
         }
 
         header {
             display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin: 10px;
+            padding: 0 16px;
         }
 
-        div > ul {
+        div>ul {
             list-style: none;
             display: flex;
         }
 
         h1 {
-            font-size: 24px;
-            border: 2px solid#000;
-            border-radius: 20px;
-            padding: 0 30px;
+            /* font-size: 24px; */
+            /* border: 2px solid#000; */
+            /* border-radius: 20px; */
+            /* padding: 0 30px; */
+            background: url(./로고이미지.png);
+            background-position: 0 -98px;
+            width: 78px;
+            height: 29px;
         }
 
-        .login_btn {
-            background-color: rgb(3, 241, 3);
-            color: #fff;
-            border: none;
-            padding:10px;
-        }
 
         .band_logo {
             display: flex;
         }
 
-        
+        .header_right {
+            display: flex;
+            align-items: center;
+        }
+
+        .header_right>li {
+            list-style: none;
+            margin: 0 16px;
+        }
+
+        .header_right>li>select {
+            background: none;
+            border: none;
+        }
+
+        .header_right>li>a {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            /* border: 1px solid #000; */
+            line-height: 50px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .header_right>li:last-child a {
+            background-color: #21c531;
+            color: #fff;
+            border-radius: 2px;
+        }
+
+        figure {
+            background: url(./모바일이미지.jpg);
+            background-size: 550px;
+            background-repeat: no-repeat;
+            width: 1000px;
+            height: 1200px;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+
+        h2 {
+            font-size: 48px;
+            margin-top: 100px;
+        }
+
+        section {
+            display: flex;
+        }
+
+        .sign_section {
+            margin-right: 300px;
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <div class="band_logo">
-            <h1>BAND</h1>
-        <ul>
+        <h1></h1>
+        <ul class="header_right">
             <li>
                 <select name="lang">
-                    <option value="eng">English</option>
                     <option value="ko">한국어</option>
+                    <option value="en">English</option>
                     <option value="jpn">日本語</option>
                     <option value="esp">espanol</option>
                     <option value="cha">繁體中文</option>
@@ -60,10 +116,32 @@
                 <a href="#">회원가입</a>
             </li>
             <li>
-                <button class="login_btn">로그인</button>
+                <a href="#">로그인</a>
             </li>
         </ul>
-        </div>
     </header>
+
+    <section>
+        <figure class="image_section">
+        </figure>
+        <div class="sign_section">
+            <h2>모임이 쉬워진다! 
+                <br>
+                우리끼리 밴드</h2>
+            <p>당신의 모임도 BAND로 시작하세요.</p>
+            <div class="login_box">
+                <button type="button" class="btn_login">
+                    <a href="#">
+                        로그인
+                    </a>
+                </button>
+                <button type="button" class="btn_sign">
+                    <a href="#">
+                        회원가입
+                    </a>
+                </button>
+            </div>
+    </section>
 </body>
+
 </html>
